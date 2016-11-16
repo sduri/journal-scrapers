@@ -3,11 +3,15 @@
 	"headless": true,
 	"elements": {
 		"abstract": {
-		"selector": "//*[contains(concat(' ', @class, ' '), ' abstract-text ')]",
+		"selector": "//div[contains(concat(' ', @class, ' '), ' abstract-text ')]",
 		"attribute": "text"
 		},
 	    "keyword": {
 	      "selector": "//li[contains(concat(' ', @class, ' '), ' doc-all-keywords-list-item ')][1]//a",
+	      "attribute": "text"
+	    },
+	    "doi": {
+	      "selector": "//div[contains(concat(' ', @class, ' '), ' stats-document-abstract-doi ')]//a",
 	      "attribute": "text"
 	    }
 	}
